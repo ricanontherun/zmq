@@ -12,7 +12,7 @@ namespace ZMQFunctions
 {
 
 /**
- * Extract a heap-allocated block from a zmq message.
+ * Extract a heap allocated block from a zmq message.
  *
  * @param message
  * @data  pointer to a void pointer.
@@ -26,7 +26,7 @@ bool extract(const zmq::message_t &message, void ** data, std::size_t & len);
  * @param message
  * @param buffer
  */
-bool extract_string(const zmq::message_t &message, std::string &buffer);
+bool extract(const zmq::message_t &message, std::string &buffer);
 
 /**
  * Build out a zmq::message from a string.
